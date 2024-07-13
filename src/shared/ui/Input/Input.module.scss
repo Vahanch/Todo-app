@@ -1,0 +1,17 @@
+.input {
+  background: var(--color-white);
+  border-radius: var(--spacing-xs);
+
+  &:focus-within {
+    & input[type="date"]:in-range::-webkit-datetime-edit-year-field,
+    input[type="date"]:in-range::-webkit-datetime-edit-month-field,
+    input[type="date"]:in-range::-webkit-datetime-edit-day-field,
+    input[type="date"]:in-range::-webkit-datetime-edit-text {
+      color: black;
+    }
+  }
+
+  & > label {
+    color: var(--color-light-slate);
+  }
+}

@@ -1,0 +1,25 @@
+$colors: (
+  "color-light-lavender": #e3e4f1,
+  "color-white": #ffffff,
+  "color-dark-lilac": #494c6b,
+  "color-light-slate": #9495a5,
+  "color-cerulean": #3a7cfd,
+  "color-light-silver": #d1d2da,
+  "color-very-light-gray": #fafafa,
+);
+
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --#{$key}: #{$value};
+      --#{$key}-rgb: #{HexToRGB($value)};
+    }
+  }
+
+  // Gradient
+  --purplegradient: linear-gradient(90deg, #8CAEFF 0%, #D959F7 100%);
+}

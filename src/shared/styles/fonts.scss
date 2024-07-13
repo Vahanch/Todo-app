@@ -1,0 +1,32 @@
+@font-face {
+  font-family: ALS Hauss;
+  src: url('../fonts/ALS_Hauss_Regular_1_1.otf') format('opentype');
+}
+
+@font-face {
+  font-family: ALS Sirius;
+  src: url('../fonts/ALS_Sirius_Bold_1_6.otf') format('opentype');
+}
+
+body {
+  font-family: ALS Hauss, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: ALS Sirius, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,16 @@
+$spaces: (
+  "spacing-xs": 4px,
+  "spacing-sm": 8px,
+  "spacing-md": 12px,
+  "spacing-lg": 16px,
+  "spacing-xl": 20px,
+  "spacing-xxl": 24px,
+);
+
+:root {
+  @if $spaces {
+    @each $key, $value in $spaces {
+      --#{$key}: #{$value};
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// chrome, edge, opera, safari
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+  background-color: #9495a5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  height: 64px;
+  width: 14px;
+  background-color: #d1d2da;
+  border: 1px solid #d1d2da;
+}

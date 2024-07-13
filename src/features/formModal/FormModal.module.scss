@@ -1,0 +1,45 @@
+@import "src/shared/styles/media";
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    background-color: rgba(var(--color-dark-lilac-rgb), 0.9);
+  }
+}
+
+.title {
+  color: var(--color-dark-lilac);
+}
+
+.form {
+  width: 60%;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--spacing-md);
+
+  @include tablet {
+    width: 90%;
+    border-radius: var(--spacing-sm);
+  }
+
+  @include mobile {
+    width: 100%;
+    border-radius: var(--spacing-xs);
+  }
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--spacing-md);
+}
